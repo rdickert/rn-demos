@@ -12,14 +12,16 @@ import { StackNavigator } from 'react-navigation';
 
 import SvgExample from '../components/SvgExample';
 import ColorScale from '../components/ColorScale';
+import LineChart from '../components/LineChart';
 
 class ChartDemoScreen extends React.Component {
   render() {
     return (
       <View>
         <Text>Chart here</Text>
-        <ColorScale width="400" />
+        <ColorScale width="350" />
         <SvgExample />
+        <LineChart />
       </View>
     )
   }
