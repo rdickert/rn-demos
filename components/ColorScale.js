@@ -18,7 +18,6 @@ import Svg,{
     Stop
 } from 'react-native-svg';
 
-
 import * as d3 from "d3";
 
 // edited from https://codepen.io/swizec/pen/oYNvpQ
@@ -28,7 +27,7 @@ import * as d3 from "d3";
 
 // Component that draws a single color swatch
 const Swatch = ({ color, width, x }) => (
-  <Rect width={width} height="20" x={x} y="0" fill={color} />
+  <Rect width={width} height="80%" x={x} y="0" fill={color} />
 );
 
 // Draws an entire color scale
@@ -53,8 +52,9 @@ class ColorScale extends Component {
   }
 
   render() {
+    // console.log('yAxis', yAxis);
     return (
-      <Svg width="600" height="200" id="svg">
+      <Svg width="600" height="70" id="svg">
         <G>
           {d3.range(20).map(i => (
             <Swatch
