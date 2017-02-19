@@ -6,8 +6,10 @@ import HomeScreen from './screens/HomeScreen';
 import ChatScreen from './screens/ChatScreen';
 import RecentChatsScreen from './screens/RecentChatsScreen';
 import AllContactsScreen from './screens/AllContactsScreen';
+import ChartDemoScreen from './screens/ChartDemoScreen';
 
 const MainScreenNavigator = TabNavigator({
+  Charts: { screen: ChartDemoScreen },
   Recent: { screen: RecentChatsScreen },
   All: { screen: AllContactsScreen },
 });
