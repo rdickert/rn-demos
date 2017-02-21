@@ -15,7 +15,7 @@ const MainScreenNavigator = TabNavigator({
 });
 
 MainScreenNavigator.navigationOptions = {
-  title: 'My Chats',
+  title: 'RN Experiments',
 };
 
 const App = StackNavigator({
